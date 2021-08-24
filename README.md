@@ -11,3 +11,5 @@
 9. Step 7: Append the axes to the chart
 10. Step 8: Create Circles
 11. Step 9: Initialize tool tip
+12. Step 10: Create tooltip in the chart
+13. Step 11: Create event listeners to display and hide the tooltip

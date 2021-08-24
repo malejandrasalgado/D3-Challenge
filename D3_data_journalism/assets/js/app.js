@@ -84,7 +84,8 @@ d3.csv("assets/data/data.csv").then(function (data) {
         .attr("cy", d => yLinearScale(d.healthcare))
         .attr("r", "15")
         .attr("fill", "pink")
-        .attr("opacity", ".75");
+        .attr("opacity", ".75")
+
 
     // Step 9: Initialize tool tip
     // ==============================
@@ -95,8 +96,20 @@ d3.csv("assets/data/data.csv").then(function (data) {
             return (`${d.abbr}<br>Population In Poverty: ${d.poverty}<br>Hits: ${d.healthcare}`);
         });
 
+    // Step 10: Create tooltip in the chart
+    // ==============================
+    chartGroup.call(toolTip);
+
+
+    // Step 11: Create event listeners to display and hide the tooltip
+    // ==============================
+    circlesGroup.on("mouseover", function (data) {
+        toolTip.show(data);
+    })
+        // onmouseout event
+        .on("mouseout", function (data, index) {
+            toolTip.hide(data);
+        });
 
 
 });
-
-
