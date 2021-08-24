@@ -29,4 +29,19 @@ var svg = d3
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+// Step 3:
+// Import data from the data.csv file
+// =================================
+d3.csv("assets/data/data.csv").then(function (data) {
+
+    // Step 4: Format the data
+    // =================================
+    data.forEach(function (data) {
+        data.healthcare = +data.healthcare;
+        data.poverty = +data.poverty;
+    });
+    //console.log(data)
+
+});
+
 
