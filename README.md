@@ -13,3 +13,4 @@
 11. Step 9: Initialize tool tip
 12. Step 10: Create tooltip in the chart
 13. Step 11: Create event listeners to display and hide the tooltip
+14. Stylists the graph 
