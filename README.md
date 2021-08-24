@@ -14,3 +14,6 @@
 12. Step 10: Create tooltip in the chart
 13. Step 11: Create event listeners to display and hide the tooltip
 14. Stylists the graph 
+15. Bonus - Initial Params
+16. function used for updating x-scale var upon click on axis label
+17. function used for updating xAxis var upon click on axis label
