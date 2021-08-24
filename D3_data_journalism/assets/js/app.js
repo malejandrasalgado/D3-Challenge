@@ -86,6 +86,14 @@ d3.csv("assets/data/data.csv").then(function (data) {
         .attr("fill", "pink")
         .attr("opacity", ".75");
 
+    // Step 9: Initialize tool tip
+    // ==============================
+    var toolTip = d3.tip()
+        .attr("class", "tooltip")
+        .offset([80, -60])
+        .html(function (d) {
+            return (`${d.abbr}<br>Population In Poverty: ${d.poverty}<br>Hits: ${d.healthcare}`);
+        });
 
 
 
