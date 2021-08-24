@@ -9,3 +9,4 @@
 7. Step 5: Create Scales
 8. Step 6: Create Axes
 9. Step 7: Append the axes to the chart
+10. Step 8: Create Circles
