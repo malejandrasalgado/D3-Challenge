@@ -61,6 +61,19 @@ d3.csv("assets/data/data.csv").then(function (data) {
     var leftAxis = d3.axisLeft(yLinearScale);
 
 
+    // Step 7: Append the axes to the chartGroup
+    // ==============================================
+    // Add bottomAxis
+    chartGroup
+        .append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(bottomAxis);
+
+    // Add leftAxis to the left side of the display
+    chartGroup
+        .append("g")
+        .call(leftAxis);
+
 
 
 });
