@@ -40,8 +40,21 @@ d3.csv("assets/data/data.csv").then(function (data) {
         data.healthcare = +data.healthcare;
         data.poverty = +data.poverty;
     });
-    //console.log(data)
+    // reading data in the console
+    console.log(data)
 
+// Step 5: Create Scales
+  //= ============================================
+  
+  var xLinearScale = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.poverty)])
+    .range([0,width]);
+
+  var yLinearScale = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.healthcare)])
+    .range([height, 0]);
+
+    
 });
 
 

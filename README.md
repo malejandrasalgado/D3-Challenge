@@ -6,3 +6,4 @@
 4. Step 3: Import data from the data csv file
 5. Step 4: Format the data
 6. Read the data in the console
+7. Step 5: Create Scales
