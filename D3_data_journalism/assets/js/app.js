@@ -43,18 +43,26 @@ d3.csv("assets/data/data.csv").then(function (data) {
     // reading data in the console
     console.log(data)
 
-// Step 5: Create Scales
-  //= ============================================
-  
-  var xLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.poverty)])
-    .range([0,width]);
+    // Step 5: Create Scales
+    //= ============================================
 
-  var yLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.healthcare)])
-    .range([height, 0]);
+    var xLinearScale = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.poverty)])
+        .range([0, width]);
 
-    
+    var yLinearScale = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.healthcare)])
+        .range([height, 0]);
+
+
+    // Step 6: Create Axes
+    // =============================================
+    var bottomAxis = d3.axisBottom(xLinearScale);
+    var leftAxis = d3.axisLeft(yLinearScale);
+
+
+
+
 });
 
 
