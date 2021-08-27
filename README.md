@@ -1,19 +1,52 @@
 # D3-Challenge
 
-1. Inspect the HTML file 
-2. Step 1: Set up our chart
-3. Step 2: Create an SVG wrapper
-4. Step 3: Import data from the data csv file
-5. Step 4: Format the data
-6. Read the data in the console
-7. Step 5: Create Scales
-8. Step 6: Create Axes
-9. Step 7: Append the axes to the chart
-10. Step 8: Create Circles
-11. Step 9: Initialize tool tip
-12. Step 10: Create tooltip in the chart
-13. Step 11: Create event listeners to display and hide the tooltip
-14. Stylists the graph 
-15. Bonus - Initial Params
-16. function used for updating x-scale var upon click on axis label
-17. function used for updating xAxis var upon click on axis label
+## Introduction
+
+The purpose of this challenge is to apply and complement the knowledge and skills acquired **Javascript**, **HTML**, , and **D3**
+
+The task involves:
+
+- GitHub
+- Javascript
+- HTML
+- Use the D3 library
+- CSS
+- Markdown
+
+### GitHub
+
+On GitHub the following task where required
+
+1. `Create` a new repository called _D3-Challenge_
+2. `Push` all the changes
+3. Ensure that the repository has regular commitments and a through `README.md` file.
+
+## D3 Dabbler (Required Assignment)
+
+1. Become familiar with the data provided from US Census Bureau 2014 (CSV file)
+2. Use the D3 techniques to create a scatter plot that represents each state
+3. Code this graphic in the app.js file and pull in the data from data.csv by using the d3.csv function.
+4. Use python -m http.server to run the visualization
+
+### Bonus: Impress the Boss (Optional Assignment)
+
+5. Use **D3** to inretact wiht the data
+6. Include more demographics and more risk factors
+7. Animate the transitions for the circles and location of the axes
+8. Use d3-tip.js plugin developed by Justin Palmer
+
+### HTML
+
+1. Become familiar with the file that we are working on and display all of the data.
+
+### CSS
+
+Use the d3Styke file to style the visualisation
+
+### Conclusions from the data
+
+1. According to the U.S. Census Bureau data in 2014, states with higher poverty have the highest uninsured population.
+
+2. Obesity exhibits a correlation in states where median houshold income were below $45,000 per year, like Arkansas, Mississippi and West Virginia, over 35% of the population was obese, whereas obesity was less than 30% of state populations where median incomes were above $65,000, such as in Washington, DC, Massachusetts or Hawaii.
+
+3. In 2014 cigarette smoking was highest among people aged median 38–42 years were over 24% like West Virginia, Kentucky and Arkansas, whilst cigarette smoking was lowest among people aged median 30-34 years.
