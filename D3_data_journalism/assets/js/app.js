@@ -1,13 +1,13 @@
 // Step 1: Set up our chart
 //= ================================
 
-var svgWidth = 820;
-var svgHeight = 700;
+var svgWidth = 960;
+var svgHeight = 500;
 
 var margin = {
     top: 20,
-    right: 50,
-    bottom: 80,
+    right: 80,
+    bottom: 100,
     left: 120
 };
 
@@ -134,7 +134,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
 
      // Healthcare
     if (chosenYAxis === "healthcare") {
-    var yLabel = "Healthcare:";
+    var yLabel = "No Healthcare:";
     }
     // age
     else if (chosenYAxis === "obesity") {
@@ -149,7 +149,8 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
         .attr('class', 'd3-tip')
         .offset([-8, 0])
         .html(function(d) {
-            return (`${d.state}<br>${xLabel} ${styleXAxis(d[chosenXAxis])}<br>${yLabel} ${d[chosenYAxis]}%`);
+            return (`${d.state}<br>${xLabel} ${styleXAxis(d[chosenXAxis], chosenXAxis)}<br>${yLabel} ${d[chosenYAxis]}%`);
+  
     });
 
   
@@ -209,7 +210,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
         .data(data)
         .enter()
         .append("circle")
-            .classed('stateCircle', true)
+            .classed("stateCircle", true)
             .attr("cx", d => xLinearScale(d[chosenXAxis]))
             .attr("cy", d => yLinearScale(d[chosenYAxis]))
             .attr("r", "14")
